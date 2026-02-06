@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 43% 4%;
+    --foreground: 220 20% 97%;
+    --card: 220 35% 8%;
+    --card-foreground: 220 20% 97%;
+    --popover: 220 35% 8%;
+    --popover-foreground: 220 20% 97%;
+    --primary: 197 89% 63%;
+    --primary-foreground: 220 43% 4%;
+    --secondary: 220 35% 12%;
+    --secondary-foreground: 220 20% 97%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 215 16% 68%;
+    --accent: 197 89% 63%;
+    --accent-foreground: 220 43% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 197 89% 63%;
+    --radius: 1.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+    background-color: #070B14;
+    overflow-x: hidden;
+  }
+}
+
+/* Typography */
+.font-display {
+  font-family: 'Sora', sans-serif;
+}
+
+.font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Headline sizes */
+.headline-1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(44px, 5vw, 72px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.headline-2 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(34px, 3.6vw, 52px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.headline-3 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(24px, 2.4vw, 32px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+/* Micro labels */
+.micro-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Body text */
+.body-text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(15px, 1.1vw, 18px);
+  font-weight: 400;
+  line-height: 1.65;
+  color: #A9B3C2;
+}
+
+/* Glass panel effect */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Image card border */
+.image-card {
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Grain overlay */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Cyan accent color */
+.text-cyan {
+  color: #4CBAF5;
+}
+
+.bg-cyan {
+  background-color: #4CBAF5;
+}
+
+.border-cyan {
+  border-color: #4CBAF5;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-8 py-4 bg-cyan text-[#070B14] font-display font-semibold rounded-full transition-all duration-200;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(76, 186, 245, 0.3);
+}
+
+.btn-outline {
+  @apply px-6 py-3 border border-cyan text-cyan font-display font-medium rounded-full transition-all duration-200;
+}
+
+.btn-outline:hover {
+  background: rgba(76, 186, 245, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Section backgrounds */
+.bg-primary-dark {
+  background-color: #070B14;
+}
+
+.bg-secondary-dark {
+  background-color: #0F172A;
+}
+
+/* Text colors */
+.text-primary-light {
+  color: #F2F5FA;
+}
+
+.text-secondary-light {
+  color: #A9B3C2;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070B14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Selection */
+::selection {
+  background: rgba(76, 186, 245, 0.3);
+  color: #F2F5FA;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid rgba(76, 186, 245, 0.35);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
