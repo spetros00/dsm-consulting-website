@@ -193,7 +193,7 @@ export default function Hero() {
           {/* CTA Row */}
           <div
             ref={ctaRef}
-            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[62%] sm:top-[58%] md:top-[56%] lg:top-[54%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
+            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[58%] sm:top-[54%] md:top-[52%] lg:top-[50%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
           >
             <button className="btn-primary flex items-center gap-2 text-sm sm:text-base">
               Start Digital Assessment
