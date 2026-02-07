@@ -230,7 +230,7 @@ export default function Hero() {
         {/* Bottom Left Caption */}
         <div
           ref={captionRef}
-          className="absolute left-[6vw] right-[6vw] bottom-[8vh] sm:bottom-[10vh] px-4 sm:px-0"
+          className="absolute left-[6vw] right-[6vw] bottom-[2vh] sm:bottom-[3vh] px-4 sm:px-0"
         >
           <p className="micro-label text-secondary-light mb-1 text-[9px] sm:text-xs leading-relaxed">
             Engineering-Validated • IT/OT Integration • 24/7 Mission-Critical
