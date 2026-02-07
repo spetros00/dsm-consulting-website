@@ -161,14 +161,14 @@ export default function Hero() {
           {/* Micro Label */}
           <span
             ref={microLabelRef}
-            className="absolute micro-label text-cyan left-[6.5%] top-[3%] sm:top-[5%] text-xs sm:text-sm"
+            className="absolute micro-label text-cyan left-[6.5%] top-[1%] sm:top-[3%] text-xs sm:text-sm"
           >
             FACILITIES ENGINEERING
           </span>
 
           {/* Headline Block */}
           <div
-            className="absolute top-[8%] sm:top-[10%] lg:top-[12%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[42%]"
+            className="absolute top-[4%] sm:top-[6%] lg:top-[8%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[42%]"
           >
             <h1
               ref={headlineRef}
@@ -185,7 +185,7 @@ export default function Hero() {
           {/* Subheadline */}
           <p
             ref={subheadlineRef}
-            className="absolute body-text top-[42%] sm:top-[40%] md:top-[38%] lg:top-[36%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[38%] text-sm sm:text-base"
+            className="absolute body-text top-[50%] sm:top-[48%] md:top-[46%] lg:top-[44%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[38%] text-sm sm:text-base"
           >
             DSM converges engineering intelligence, advanced analytics, and system integration into a unified operational layer—hardening reliability and accelerating decision velocity in mission-critical environments.
           </p>
@@ -193,7 +193,7 @@ export default function Hero() {
           {/* CTA Row */}
           <div
             ref={ctaRef}
-            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[58%] sm:top-[54%] md:top-[52%] lg:top-[50%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
+            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[70%] sm:top-[66%] md:top-[64%] lg:top-[62%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
           >
             <button className="btn-primary flex items-center gap-2 text-sm sm:text-base">
               Start Digital Assessment
