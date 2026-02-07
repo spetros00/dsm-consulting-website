@@ -47,7 +47,7 @@ export default function ClientLogin() {
       className="relative w-full min-h-screen py-24 flex items-center justify-center z-[85]"
       style={{ backgroundColor: '#070B14' }}
     >
-      <div className="px-[8vw] w-full max-w-md">
+      <div className="px-[8vw] w-full max-w-lg">
         <div ref={contentRef}>
           {/* Lock Icon */}
           <div className="flex justify-center mb-8">

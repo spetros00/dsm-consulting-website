@@ -177,7 +177,7 @@ export default function Hero() {
           {/* Headline Block */}
           <div
             className="absolute top-[12%] sm:top-[14%] lg:top-[16%]"
-            style={{ left: '6.5%', width: '90%', maxWidth: '42%' }}
+            style={{ left: '6.5%', right: '6.5%', maxWidth: '85%' }}
           >
             <h1
               ref={headlineRef}
@@ -190,21 +190,21 @@ export default function Hero() {
               ))}
             </h1>
           </div>
-yesconfir
+
           {/* Subheadline */}
           <p
             ref={subheadlineRef}
             className="absolute body-text top-[54%] sm:top-[52%] md:top-[50%] lg:top-[48%]"
-            style={{ left: '6.5%', width: '90%', maxWidth: '38%' }}
+            style={{ left: '6.5%', right: '6.5%', maxWidth: '85%' }}
           >
-            DSM converges engineering intelligence, advanced analytics, and system integration into a unified operational layer—hardening reliability and accelerating decision velocity in mission-critical environments..
+            DSM converges engineering intelligence, advanced analytics, and system integration into a unified operational layer—hardening reliability and accelerating decision velocity in mission-critical environments.
           </p>
 
           {/* CTA Row */}
           <div
             ref={ctaRef}
             className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 top-[72%] sm:top-[70%] md:top-[68%] lg:top-[64%]"
-            style={{ left: '6.5%', width: '90%', maxWidth: '80%' }}
+            style={{ left: '6.5%', right: '6.5%', maxWidth: '85%' }}
           >
             <button className="btn-primary flex items-center gap-2 text-sm sm:text-base">
               Start Digital Assessment
