@@ -190,7 +190,7 @@ export default function Hero() {
               ))}
             </h1>
           </div>
-yes
+yesconfir
           {/* Subheadline */}
           <p
             ref={subheadlineRef}
