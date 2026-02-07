@@ -12,6 +12,7 @@ import Industries from './sections/Industries';
 import Insights from './sections/Insights';
 import About from './sections/About';
 import Contact from './sections/Contact';
+import ClientLogin from './sections/ClientLogin';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,6 +92,7 @@ function App() {
         <Insights />
         <About />
         <Contact />
+        <ClientLogin />
       </main>
     </div>
   );

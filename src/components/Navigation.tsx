@@ -60,9 +60,9 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
-            <a 
-              href="#contact"
-              onClick={(e) => handleLinkClick(e, '#contact')}
+            <a
+              href="#client-login"
+              onClick={(e) => handleLinkClick(e, '#client-login')}
               className="btn-outline text-sm py-2 px-4"
             >
               Client Login
@@ -96,9 +96,9 @@ export default function Navigation() {
               {link.label}
             </a>
           ))}
-          <a 
-            href="#contact"
-            onClick={(e) => handleLinkClick(e, '#contact')}
+          <a
+            href="#client-login"
+            onClick={(e) => handleLinkClick(e, '#client-login')}
             className="btn-outline mt-4"
           >
             Client Login
