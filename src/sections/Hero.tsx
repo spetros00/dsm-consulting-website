@@ -156,32 +156,23 @@ export default function Hero() {
         {/* Glass Panel */}
         <div
           ref={panelRef}
-          className="absolute glass-panel"
-          style={{
-            width: '84vw',
-            height: '78vh',
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%)'
-          }}
+          className="absolute glass-panel w-[92vw] h-[85vh] sm:w-[88vw] sm:h-[82vh] md:w-[84vw] md:h-[78vh] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           {/* Micro Label */}
           <span
             ref={microLabelRef}
-            className="absolute micro-label text-cyan"
-            style={{ left: '6.5%', top: '10%' }}
+            className="absolute micro-label text-cyan left-[6.5%] top-[12%] sm:top-[10%] text-xs sm:text-sm"
           >
             FACILITIES ENGINEERING
           </span>
 
           {/* Headline Block */}
           <div
-            className="absolute top-[12%] sm:top-[14%] lg:top-[16%]"
-            style={{ left: '6.5%', right: '6.5%', maxWidth: '85%' }}
+            className="absolute top-[18%] sm:top-[14%] lg:top-[16%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[42%]"
           >
             <h1
               ref={headlineRef}
-              className="headline-1 text-primary-light"
+              className="headline-1 text-primary-light text-4xl sm:text-5xl md:text-6xl"
             >
               {words.map((word, i) => (
                 <span key={i} className="word inline-block mr-[0.3em]">
@@ -194,8 +185,7 @@ export default function Hero() {
           {/* Subheadline */}
           <p
             ref={subheadlineRef}
-            className="absolute body-text top-[54%] sm:top-[52%] md:top-[50%] lg:top-[48%]"
-            style={{ left: '6.5%', right: '6.5%', maxWidth: '85%' }}
+            className="absolute body-text top-[62%] sm:top-[52%] md:top-[50%] lg:top-[48%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[38%] text-sm sm:text-base"
           >
             DSM converges engineering intelligence, advanced analytics, and system integration into a unified operational layer—hardening reliability and accelerating decision velocity in mission-critical environments.
           </p>
@@ -203,8 +193,7 @@ export default function Hero() {
           {/* CTA Row */}
           <div
             ref={ctaRef}
-            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 top-[72%] sm:top-[70%] md:top-[68%] lg:top-[64%]"
-            style={{ left: '6.5%', right: '6.5%', maxWidth: '85%' }}
+            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[78%] sm:top-[70%] md:top-[68%] lg:top-[64%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
           >
             <button className="btn-primary flex items-center gap-2 text-sm sm:text-base">
               Start Digital Assessment
@@ -241,13 +230,12 @@ export default function Hero() {
         {/* Bottom Left Caption */}
         <div
           ref={captionRef}
-          className="absolute px-4 sm:px-0"
-          style={{ left: '6vw', bottom: '6vh', right: '6vw' }}
+          className="absolute left-[6vw] right-[6vw] bottom-[4vh] sm:bottom-[6vh] px-4 sm:px-0"
         >
-          <p className="micro-label text-secondary-light mb-1 text-[10px] sm:text-xs">
+          <p className="micro-label text-secondary-light mb-1 text-[9px] sm:text-xs leading-relaxed">
             Engineering-Validated • IT/OT Integration • 24/7 Mission-Critical
           </p>
-          <p className="body-text text-xs sm:text-sm">
+          <p className="body-text text-[11px] sm:text-sm">
             Data-driven. Engineering-led. Built for uptime.
           </p>
         </div>
