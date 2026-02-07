@@ -161,14 +161,14 @@ export default function Hero() {
           {/* Micro Label */}
           <span
             ref={microLabelRef}
-            className="absolute micro-label text-cyan left-[6.5%] top-[12%] sm:top-[10%] text-xs sm:text-sm"
+            className="absolute micro-label text-cyan left-[6.5%] top-[8%] sm:top-[10%] text-xs sm:text-sm"
           >
             FACILITIES ENGINEERING
           </span>
 
           {/* Headline Block */}
           <div
-            className="absolute top-[18%] sm:top-[14%] lg:top-[16%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[42%]"
+            className="absolute top-[14%] sm:top-[16%] lg:top-[18%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[42%]"
           >
             <h1
               ref={headlineRef}
@@ -185,7 +185,7 @@ export default function Hero() {
           {/* Subheadline */}
           <p
             ref={subheadlineRef}
-            className="absolute body-text top-[62%] sm:top-[52%] md:top-[50%] lg:top-[48%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[38%] text-sm sm:text-base"
+            className="absolute body-text top-[55%] sm:top-[50%] md:top-[48%] lg:top-[46%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[38%] text-sm sm:text-base"
           >
             DSM converges engineering intelligence, advanced analytics, and system integration into a unified operational layer—hardening reliability and accelerating decision velocity in mission-critical environments.
           </p>
@@ -193,7 +193,7 @@ export default function Hero() {
           {/* CTA Row */}
           <div
             ref={ctaRef}
-            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[78%] sm:top-[70%] md:top-[68%] lg:top-[64%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
+            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[70%] sm:top-[66%] md:top-[64%] lg:top-[62%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
           >
             <button className="btn-primary flex items-center gap-2 text-sm sm:text-base">
               Start Digital Assessment
@@ -230,7 +230,7 @@ export default function Hero() {
         {/* Bottom Left Caption */}
         <div
           ref={captionRef}
-          className="absolute left-[6vw] right-[6vw] bottom-[4vh] sm:bottom-[6vh] px-4 sm:px-0"
+          className="absolute left-[6vw] right-[6vw] bottom-[8vh] sm:bottom-[10vh] px-4 sm:px-0"
         >
           <p className="micro-label text-secondary-light mb-1 text-[9px] sm:text-xs leading-relaxed">
             Engineering-Validated • IT/OT Integration • 24/7 Mission-Critical
