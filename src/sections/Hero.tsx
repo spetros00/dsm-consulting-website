@@ -14,6 +14,7 @@ export default function Hero() {
     const imageCardRef = useRef<HTMLDivElement>(null);
     const microLabelRef = useRef<HTMLSpanElement>(null);
     const captionRef = useRef<HTMLDivElement>(null);
+    const leftContentRef = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(() => {
       const section = sectionRef.current;
@@ -24,8 +25,9 @@ export default function Hero() {
       const imageCard = imageCardRef.current;
       const microLabel = microLabelRef.current;
       const caption = captionRef.current;
+      const leftContent = leftContentRef.current;
 
-      if (!section || !panel || !headline || !subheadline || !cta || !imageCard || !microLabel || !caption) return;
+      if (!section || !panel || !headline || !subheadline || !cta || !imageCard || !microLabel || !caption || !leftContent) return;
 
       const ctx = gsap.context(() => {
         // Load animation timeline
@@ -134,7 +136,7 @@ export default function Hero() {
     return (
       <section
         ref={sectionRef}
-        className="relative w-screen h-screen overflow-hidden z-10"
+        className="relative w-screen min-h-screen overflow-hidden z-10"
         style={{ backgroundColor: '#070B14' }}
       >
         {/* Background Image */}
@@ -158,21 +160,23 @@ export default function Hero() {
           ref={panelRef}
           className="absolute glass-panel w-[92vw] h-[85vh] sm:w-[88vw] sm:h-[82vh] md:w-[84vw] md:h-[78vh] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         >
+          {/* Left Content Area - With bottom constraint to stay above caption */}
+          <div
+            ref={leftContentRef}
+            className="absolute left-[6.5%] top-[4%] sm:top-[5%] md:top-[6%] right-[6.5%] md:right-[40%] bottom-[12%] sm:bottom-[10%] overflow-hidden"
+          >
           {/* Micro Label */}
           <span
             ref={microLabelRef}
-            className="absolute micro-label text-cyan left-[6.5%] top-[1%] sm:top-[3%] text-xs sm:text-sm"
+              className="micro-label text-cyan text-xs sm:text-sm block mb-4 sm:mb-5"
           >
             FACILITIES ENGINEERING
           </span>
 
-          {/* Headline Block */}
-          <div
-            className="absolute top-[4%] sm:top-[6%] lg:top-[8%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[42%]"
-          >
+            {/* Headline */}
             <h1
               ref={headlineRef}
-              className="headline-1 text-primary-light text-4xl sm:text-5xl md:text-6xl"
+              className="headline-1 text-primary-light text-4xl sm:text-5xl md:text-6xl mb-5 sm:mb-6"
             >
               {words.map((word, i) => (
                 <span key={i} className="word inline-block mr-[0.3em]">
@@ -180,12 +184,11 @@ export default function Hero() {
                 </span>
               ))}
             </h1>
-          </div>
 
           {/* Subheadline */}
           <p
             ref={subheadlineRef}
-            className="absolute body-text top-[50%] sm:top-[48%] md:top-[46%] lg:top-[44%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%] md:max-w-[38%] text-sm sm:text-base"
+              className="body-text text-sm sm:text-base max-w-full md:max-w-[90%] mb-5 sm:mb-6"
           >
             DSM converges engineering intelligence, advanced analytics, and system integration into a unified operational layer—hardening reliability and accelerating decision velocity in mission-critical environments.
           </p>
@@ -193,7 +196,7 @@ export default function Hero() {
           {/* CTA Row */}
           <div
             ref={ctaRef}
-            className="absolute flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 top-[48%] sm:top-[46%] md:top-[45%] lg:top-[44%] left-[6.5%] right-[6.5%] max-w-[90%] sm:max-w-[85%]"
+              className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6"
           >
             <button className="btn-primary flex items-center gap-2 text-sm sm:text-base">
               Start Digital Assessment
@@ -206,6 +209,7 @@ export default function Hero() {
               Explore Engineering Capabilities
               <ArrowRight className="w-4 h-4" />
             </a>
+            </div>
           </div>
 
           {/* Right Image Card */}
