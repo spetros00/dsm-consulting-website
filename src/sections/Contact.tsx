@@ -122,9 +122,9 @@
                 </div>
                 <div>
                   <p className="micro-label text-secondary-light mb-1">Phone</p>
-                  <a href="tel:+14242098389" className="text-primary-light
+                  <a href="tel:+1-800-391-0805" className="text-primary-light
   hover:text-cyan transition-colors">
-                    +1 (424) 209-8389
+                    +1 (800) 391-0805
                   </a>
                 </div>
               </div>
